@@ -1613,7 +1613,7 @@
                       <iconify-icon icon="heroicons-outline:chevron-right" class="relative top-[3px] text-slate-500 rtl:rotate-180"></iconify-icon>
                     </li>
                     <li class="inline-block relative text-sm text-slate-500 font-Inter dark:text-white">
-                      Categorias</li>
+                      Productos</li>
                   </ul>
                 </div>
                 <!-- END: BreadCrumb -->
@@ -1622,7 +1622,7 @@
                 <div class=" space-y-5">
                  <div class="card">
                     <header class=" card-header noborder">
-                      <h4 class="card-title">Categorias
+                      <h4 class="card-title">Productos
                       </h4>
                       <button data-bs-toggle="modal" data-bs-target="#successModal" class="btn inline-flex justify-center btn-success">Nueva</button>
                       
@@ -1634,7 +1634,7 @@
                                   <!-- Modal header -->
                                   <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-success-500">
                                     <h3 class="text-base font-medium text-white dark:text-white capitalize">
-                                      Alta de categorias
+                                      Nuevo producto
                                     </h3>
                                     <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
                                                         dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
@@ -1649,18 +1649,45 @@
                                   <div class="p-6 space-y-4">
                                     <div class="card-text h-full space-y-4">
                                         <div class="input-area">
-                                          <label for="name" class="form-label">Nombre*</label>
-                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria">
+                                          <label for="name" class="form-label">Descripcion</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Diguite el nombre del producto">
                                         </div>
                         
                         
-                                        <div class="input-area">
-                                          <label for="description" class="form-label">Observaciones</label>
-                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones"></textarea>
+                                        <div class="card-text h-full space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                          <div>
+                            <label for="basicSelect" class="form-label">Categorias</label>
+                            <select name="basicSelect" id="basicSelect" class="form-control w-full mt-2">
+                              <option selected="Selected" disabled="disabled" value="none" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Seleccione</option>
+                              <option value="option1" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Alimentos y Bebidas</option>
+                              <option value="option2" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Tecnología y Electrónica</option>
+                              <option value="option3" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Niños</option>
+                            </select>
+                          </div>
+                          <div>
+                            <label for="basicSelect" class="form-label">Provedores</label>
+                            <select name="basicSelect" id="basicSelect" class="form-control w-full mt-2">
+                              <option selected="Selected" disabled="disabled" value="none" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Seleccione</option>
+                              <option value="option1" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Nestlé</option>
+                              <option value="option2" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">La Costeña</option>
+                              <option value="option3" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Great Value</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-area">
+                        
+                                          <label for="name" class="form-label">Precio</label>
+                                          <input id="name" type="text" class="form-control" placeholder="0">
+                                          <div class="grid md:grid-cols-2 gap-6">
+                                            
                                         </div>
-          
-                                      </div>
-                                  </div>
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                        </div>
+                                        </div>
+                    </div>
+                  </div>
                                   <!-- Modal footer -->
                                   <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
                                     <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-success-500">Guardar</button>
@@ -1678,7 +1705,7 @@
                                   <!-- Modal header -->
                                   <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-primary-500">
                                     <h3 class="text-base font-medium text-white dark:text-white capitalize">
-                                      Actualizar categorias
+                                      Nuevo producto
                                     </h3>
                                     <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
                                                         dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
@@ -1693,18 +1720,45 @@
                                   <div class="p-6 space-y-4">
                                     <div class="card-text h-full space-y-4">
                                         <div class="input-area">
-                                          <label for="name" class="form-label">Nombre*</label>
-                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria">
+                                          <label for="name" class="form-label">Descripción</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Ingrese el nombre del producto">
                                         </div>
                         
                         
-                                        <div class="input-area">
-                                          <label for="description" class="form-label">Observaciones</label>
-                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones"></textarea>
+                                        <div class="card-text h-full space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                          <div>
+                            <label for="basicSelect" class="form-label">Categoría</label>
+                            <select name="basicSelect" id="basicSelect" class="form-control w-full mt-2">
+                              <option selected="Selected" disabled="disabled" value="none" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Seleccione</option>
+                              <option value="option1" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Alimentos y Bebidas</option>
+                              <option value="option2" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Tecnología y Electrónica</option>
+                              <option value="option3" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Niños</option>
+                            </select>
+                          </div>
+                          <div>
+                            <label for="basicSelect" class="form-label">Proveedor</label>
+                            <select name="basicSelect" id="basicSelect" class="form-control w-full mt-2">
+                              <option selected="Selected" disabled="disabled" value="none" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Seleccione</option>
+                              <option value="option1" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Nestlé</option>
+                              <option value="option2" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">La Costeña</option>
+                              <option value="option3" class="py-1 inline-block font-Inter font-normal text-sm text-slate-600">Great Value</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-area">
+                        
+                                          <label for="name" class="form-label">Precio</label>
+                                          <input id="name" type="text" class="form-control" placeholder="0">
+                                          <div class="grid md:grid-cols-2 gap-6">
+                                            
                                         </div>
-          
-                                      </div>
-                                  </div>
+                                        <div class="grid md:grid-cols-2 gap-6">
+                                        </div>
+                                        </div>
+                    </div>
+                  </div>
                                   <!-- Modal footer -->
                                   <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
                                     <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-primary-500">Actualizar</button>
@@ -1737,7 +1791,7 @@
                                   <div class="p-6 space-y-4">
                                     <div class="card-text h-full space-y-4">
                                         <div class="input-area">
-                                          <label for="name" class="form-label">Nombre*</label>
+                                          <label for="name" class="form-label">Nombre</label>
                                           <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria" value="Alimentos y bebidas" readonly>
                                         </div>
                         
@@ -1779,7 +1833,7 @@
                                   <!-- Modal body -->
                                   <div class="p-6 space-y-4">
                                     <div class="card-text h-full space-y-4">
-                                      <p>Esta seguro que quiere eliminar la categoria de Alimentos y vevidas?</p>   
+                                      <p>¿Está seguro que quiere eliminar el producto?</p>   
                                     </div>
                                   </div>
                                   <!-- Modal footer -->
@@ -1808,6 +1862,10 @@
                                   </th>
 
                                   <th scope="col" class=" table-th ">
+                                    Precio
+                                  </th>
+
+                                  <th scope="col" class=" table-th ">
                                     Acciones
                                   </th>
 
@@ -1816,8 +1874,9 @@
                               <tbody class="bg-white divide-y divide-slate-100 dark:bg-slate-800 dark:divide-slate-700">
 
                                 <tr>
-                                  <td class="table-td">Alimentos y bebidas</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Chocolate</td>
+                                  <td class="table-td ">$15.00</td>
+                                    <td class="table-td">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
                                       <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
@@ -1832,160 +1891,170 @@
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Pan</td>
+                                  <td class="table-td ">$10.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                     <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                 <td class="table-td">Queso</td>
+                                  <td class="table-td ">$60.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Plátanos</td>
+                                  <td class="table-td ">$23.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Manzanas</td>
+                                  <td class="table-td ">$54.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Leche</td>
+                                  <td class="table-td ">$24.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Huevos</td>
+                                  <td class="table-td ">$54.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                     <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Galletas</td>
+                                  <td class="table-td ">$60.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                     <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                 <td class="table-td">Tostadas</td>
+                                  <td class="table-td ">$25.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
+                                 <td class="table-td">Pollo</td>
+                                  <td class="table-td ">$107.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                     <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td class="table-td">Tecnología y Electrónica</td>
-                                  <td class="table-td ">
+                                  <td class="table-td">Uvas</td>
+                                  <td class="table-td ">$84.00</td>
+                                    <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                     <button data-bs-toggle="modal" data-bs-target="#viewModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
@@ -2013,7 +2082,7 @@
             <div class="text-center ltr:md:text-start rtl:md:text-right text-sm">
               COPYRIGHT ©
               <span id="thisYear"></span>
-              SiVeO, Todos los derechos reservados
+              Carlos Omar Fernández Casillas, Todos los derechos reservados
             </div>
             <div class="ltr:md:text-right rtl:md:text-end text-center text-sm">
               Hand-crafted &amp; Made by
@@ -2071,5 +2140,6 @@
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/rt-plugins.js"></script>
   <script src="assets/js/app.js"></script>
+  
 </body>
 </html>

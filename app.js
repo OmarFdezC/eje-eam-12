@@ -28,6 +28,10 @@ app.get('/categorias',(req,res)=>{
     res.render('categorias');
 });
 
+app.get('/productos',(req,res)=>{
+    res.render('productos');
+});
+
 app.get('*',(req,res)=>{
     res.render('404');
 });
